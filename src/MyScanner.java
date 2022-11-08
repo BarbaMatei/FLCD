@@ -121,13 +121,17 @@ public class MyScanner {
     }
 
     private void GenerateTokenTable() throws FileNotFoundException {
-        Scanner scanner = new Scanner(new File("D:\\Matei\\University\\FLTC\\untitled\\src\\token.txt"));
+        Scanner scanner = new Scanner(new File("D:\\Matei\\University\\FLCD\\src\\token.txt"));
         int index = 0;
         while (scanner.hasNextLine()) {
             String line = scanner.nextLine();
             tokenTable.add(new Pair<>(line.toString(), index));
             index++;
         }
+    }
+
+    public PIF getPif() {
+        return pif;
     }
 
     private int GetTokenPosition(String token){
