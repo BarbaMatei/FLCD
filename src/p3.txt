@@ -1,0 +1,12 @@
+create array #a;
+create #index = 1;
+create #n = 10;
+while #index <= #n
+	#a(#index) = 5;
+	#index = #index + 1;
+endwhile
+create #sum = 0;
+#index = 0;
+while #index <= #n
+	#sum = #sum + #a(#index);
+endwhile

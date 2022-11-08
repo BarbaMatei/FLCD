@@ -1,0 +1,19 @@
+create $z = 'abc';
+create #a = 10;
+create #b = 20;
+create #c = 15;
+create #max = 0;
+if #a > #b then
+	if #a > #c then
+		#max = #a;
+	else
+		#max = #c;
+	endif
+else
+	if #b > #c then
+		#max = #b;
+	else
+		#max = #c;
+	endif
+endif
+show #max;
